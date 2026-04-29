@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Core/RNIF2.Core.csproj" />
+    <Project Path="src/Handlers/RNIF2.Handlers.csproj" />
+    <Project Path="src/Host/RNIF2.Host.csproj" />
+    <Project Path="src/Parsing/RNIF2.Parsing.csproj" />
+    <Project Path="src/Security/RNIF2.Security.csproj" />
+    <Project Path="src/Signals/RNIF2.Signals.csproj" />
+    <Project Path="src/Transport/RNIF2.Transport.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Integration.Tests/RNIF2.Integration.Tests.csproj" />
+    <Project Path="tests/Parsing.Tests/RNIF2.Parsing.Tests.csproj" />
+    <Project Path="tests/Signals.Tests/RNIF2.Signals.Tests.csproj" />
+  </Folder>
+</Solution>

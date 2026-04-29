@@ -1,0 +1,58 @@
+--rnif-boundary
+Content-Type: application/xml; charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?>
+<rnif:Preamble xmlns:rnif="urn:rosettanet:specifications:rnif:xsd:02.00">
+  <rnif:standardVersion>V02.00</rnif:standardVersion>
+  <rnif:GlobalUsageCode>Test</rnif:GlobalUsageCode>
+  <rnif:GlobalDateTimeStamp>2024-01-15T10:30:00Z</rnif:GlobalDateTimeStamp>
+</rnif:Preamble>
+--rnif-boundary
+Content-Type: application/xml; charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?>
+<rnif:DeliveryHeader xmlns:rnif="urn:rosettanet:specifications:rnif:xsd:02.00">
+  <rnif:FromRole>
+    <rnif:PartnerIdentification>
+      <rnif:GlobalBusinessIdentifier>urn:duns:987654321</rnif:GlobalBusinessIdentifier>
+    </rnif:PartnerIdentification>
+  </rnif:FromRole>
+  <rnif:ToRole>
+    <rnif:PartnerIdentification>
+      <rnif:GlobalBusinessIdentifier>urn:duns:123456789</rnif:GlobalBusinessIdentifier>
+    </rnif:PartnerIdentification>
+  </rnif:ToRole>
+  <rnif:MessageTrackingID>uuid:550e8400-e29b-41d4-a716-446655440000</rnif:MessageTrackingID>
+  <rnif:MessageDateTime>2024-01-15T10:30:00Z</rnif:MessageDateTime>
+</rnif:DeliveryHeader>
+--rnif-boundary
+Content-Type: application/xml; charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?>
+<rnif:ServiceHeader xmlns:rnif="urn:rosettanet:specifications:rnif:xsd:02.00">
+  <rnif:ProcessControl>
+    <rnif:PipCode>3A4</rnif:PipCode>
+    <rnif:PipVersion>V02.02</rnif:PipVersion>
+    <rnif:PipInstanceId>uuid:660e9500-f30c-52e5-b827-557766550111</rnif:PipInstanceId>
+  </rnif:ProcessControl>
+  <rnif:InitiatorRole>Buyer</rnif:InitiatorRole>
+  <rnif:ResponderRole>Seller</rnif:ResponderRole>
+</rnif:ServiceHeader>
+--rnif-boundary
+Content-Type: application/xml; charset=utf-8
+
+<?xml version="1.0" encoding="utf-8"?>
+<PurchaseOrderRequest xmlns="urn:rosettanet:specifications:domain:purchasing:xsd:02.00">
+  <requestingOrganization>
+    <businessName>Buyer Corp</businessName>
+    <globalBusinessIdentifier>urn:duns:987654321</globalBusinessIdentifier>
+  </requestingOrganization>
+  <purchaseOrder>
+    <purchaseOrderIdentification>
+      <ProprietaryDocumentIdentification>
+        <documentIdentifier>PO-2024-001</documentIdentifier>
+      </ProprietaryDocumentIdentification>
+    </purchaseOrderIdentification>
+  </purchaseOrder>
+</PurchaseOrderRequest>
+--rnif-boundary--

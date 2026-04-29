@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Host\RNIF2.Host.csproj" />
+    <ProjectReference Include="..\..\src\Core\RNIF2.Core.csproj" />
+    <ProjectReference Include="..\..\src\Parsing\RNIF2.Parsing.csproj" />
+    <ProjectReference Include="..\..\src\Security\RNIF2.Security.csproj" />
+    <ProjectReference Include="..\..\src\Signals\RNIF2.Signals.csproj" />
+    <ProjectReference Include="..\..\src\Handlers\RNIF2.Handlers.csproj" />
+    <ProjectReference Include="..\..\src\Transport\RNIF2.Transport.csproj" />
+  </ItemGroup>
+
+</Project>
